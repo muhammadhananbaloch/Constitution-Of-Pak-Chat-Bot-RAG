@@ -44,7 +44,7 @@ def load_graph():
     db = Chroma(persist_directory=CHROMA_PATH, embedding_function=embedding_function)
     retriever = db.as_retriever(k=3)
     # Use a powerful and recent model for better reasoning
-    llm = ChatGoogleGenerativeAI(model="gemini-1.5-flash-latest", temperature=0.2)
+    llm = ChatGoogleGenerativeAI(model="gemini-2.5-flash-lite", temperature=0.2)
 
     # --- Define Graph Nodes ---
 
@@ -243,4 +243,5 @@ if prompt := st.chat_input("Ask a question..."):
             "content": response,
             "sources": sources
         })
+
 
