@@ -3,6 +3,8 @@ langchain
 langchain-chroma
 langchain-huggingface
 langchain-google-genai
+langchain_core
 langgraph
 python-dotenv
 sentence-transformers
+
